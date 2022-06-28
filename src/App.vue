@@ -9,6 +9,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  data(){ // รีเทิร์น ข้อมูล
+    return{
+      firstname:"แบงค์",
+      lastname :"Jessie",
+      age: 16,
+    }
+  },
   components: {
     HelloWorld
   }
