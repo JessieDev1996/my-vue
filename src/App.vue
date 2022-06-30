@@ -4,9 +4,10 @@
   <img v-bind:src="picture" v-bind:width="size" v-bind:height="size" ref="imageURL"/>
   <img :src="picture" :width="size" :height="size"/><br/>
   <form v-on:submit="submitform">
-  ป้อนชื่อเล่น : <input type="text" v-on:input="setNickName" ref="nickNameEL"/>
+  ป้อนชื่อเล่น : <input type="text" ref="nickNameEL"/>
   <button type="submit">บันทึก</button>
     </form>
+  ป้อนชื่อเล่น : <input type="text" v-on:input="setNickName"/>
   <h1>ชื่อนามสกุล :{{getFullname()}}</h1>
   <h1>ชื่อผู้สมัครงาน :{{firstname}}</h1>
   <h1>ชื่อเล่น :{{nickname}}</h1>
@@ -76,6 +77,7 @@ export default {
       alert("บันทึกชื่อเล่นให้หน่อย")
       console.log(this.$refs.imageURL);
       console.log(this.$refs.nickNameEL);
+      this.nickname = this.$refs.nickNameEL.value;
     }
   },
   // components: {
