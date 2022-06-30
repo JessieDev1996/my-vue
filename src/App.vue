@@ -36,7 +36,7 @@ export default {
   name: 'App',
   data(){ // รีเทิร์น ข้อมูล
     return{
-      firstname:"แบงค์",
+      firstname:"แบงค์เอง",
       lastname :"Jessie",
       nickname :"",
       age: 16,
