@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
     h1{
-        color: yellow;
+        color: white;
     }
 </style>
 
